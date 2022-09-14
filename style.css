@@ -71,7 +71,7 @@ section ul{
     flex-wrap: wrap;
 }
 section ul li{
-    transition: transform .s3; 
+    transition: transform .3s; 
 }
 section ul li:hover{
     transform: scale(1.1);
