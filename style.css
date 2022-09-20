@@ -42,12 +42,14 @@ header div img{
     
 }
 main{
-    max-width: 580px;
+    max-width: 360px;
     width: 90%;
     margin: 32px auto;
     display: grid;
     gap: 24px;
     margin-top: 32px;
+
+    overflow: hidden;
 }
 section {
     color: white;
@@ -128,4 +130,13 @@ main section:nth-child(3){
         opacity: 1;
       transform: translateX(0);
     }
+}
+section {
+    width: 360px;
+    overflow: hidden;
+}
+/* swiper*/
+section ul{
+     flex-wrap: nowrap;
+     gap: 0;
 }

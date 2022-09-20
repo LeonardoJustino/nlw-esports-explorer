@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
     <title>NLW Esports</title>
     </head>
     <body>
@@ -27,24 +31,26 @@
                 <div>
                     <h2>Meus jogos</h2>
                     <p>Os games que eu mais curto jogar!</p>
-                 <ul class="games-list">
-                    <li>
+                    <div class="swiper mySwiper"/>
+                    <ul class="games-list swiper-wrapper">
+                    <li class="swiper-slide">
                         <a href="https://www.twitch.tv/directory/game/Counter-Strike%3A%20Global%20Offensive" target="_blank"></a>
                           <img src="https://static-cdn.jtvnw.net/ttv-boxart/32399_IGDB-188x250.jpg" alt="imagem do jogo csgo">
                     </li>
-                    <li>
+                    <li  class="swiper-slide">
                         <a href="https://www.twitch.tv/directory/game/VALORANT" target="_blank"></a>
                           <img src="https://static-cdn.jtvnw.net/ttv-boxart/516575-188x250.jpg" alt="imagem do jogo VALORANT">
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <a href="https://www.twitch.tv/directory/game/Minecraft" target="_blank"></a>
                           <img src="https://static-cdn.jtvnw.net/ttv-boxart/27471_IGDB-188x250.jpg" alt="imagem do jogo Minecraft">
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <a href="https://www.twitch.tv/directory/game/Virtual%20Casino"></a>
                         <img src="https://static-cdn.jtvnw.net/ttv-boxart/29452_IGDB-188x250.jpg" alt="imagem jogo virtual casino">
                     </li>
                 </ul>
+            </div>
                 </div>
             </section>
 
@@ -52,28 +58,30 @@
                 <div>
                     <h2>Canais e streamers</h2>
                     <p>Lista de canais e transmissões que não perco!</p>
-                 <ul class="channel-list">
-                    <li>
+                    <div class="swiper mySwiper"/>
+                 <ul class="channel-list swiper-wrapper">
+                    <li  class="swiper-slide">
                         <a href="https://www.twitch.tv/maykbrito" target="_blank"></a>
                           <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/9ce11a2b-ec84-44b1-9c76-b8d29df5fef0-profile_image-150x150.png" alt="imagem mayk brito">
                     </li>
-                    <li>
+                    <li  class="swiper-slide">
                         <a href="https://www.twitch.tv/alanzoka" target="_blank"></a>
                           <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/15cec952-c1ba-4ff8-a79c-53c2fa5bd269-profile_image-150x150.png" alt="imagem de alanzoka">
                     </li>
-                    <li>
+                    <li  class="swiper-slide">
                         <a href="https://www.twitch.tv/gaules" target="_blank"></a>
                           <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f4b12683-57ff-4b57-926a-67512b43a7ff-profile_image-150x150.png" alt="imagem gaules">
                     </li>
-                    <li>
+                    <li  class="swiper-slide">
                         <a href="https://www.twitch.tv/worshey"></a>
                         <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/73ee33db-aff8-4a0f-8205-e60559183a96-profile_image-150x150.png" alt="imagem worshey">
                     </li>
-                    <li>
+                    <li  class="swiper-slide">
                         <a href="https://www.twitch.tv/nicetexfps"></a>
                         <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/c141c451-7f01-43c3-a896-20339542926c-profile_image-150x150.png" alt="">
                     </li>
                 </ul>
+                </div>
                 </div>
             </section>
 
@@ -114,6 +122,13 @@
                 </div>
             </section>
         </main>
-
+        <!--Swiper JS-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!--Initialize Swiper-->
+        <script>
+            var swiper = new Swiper(".mySwiper", { 
+                slidesPerView: 3,});
+                /* slidesPerView: -> quantos slides quer ver por vez, 1,2,3... */
+        </script>
     </body>
 </html>
